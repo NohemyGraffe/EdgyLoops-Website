@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edgy Loops – App Development Studio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="logo">Edgy<span>Loops</span></div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">What we build</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Smart. Edgy. Apps that people actually use.</h1>
+        <p>
+          Edgy Loops is a small app studio building playful, high-performing
+          mobile and web experiences. We ship fast, test fast, and keep things
+          fun.
+        </p>
+        <button class="primary-btn" onclick="scrollToContact()">
+          Work with us
+        </button>
+      </div>
+      <div class="hero-card">
+        <p class="pill">Currently accepting projects</p>
+        <h2>What we do</h2>
+        <ul>
+          <li>📱 Mobile apps (Flutter / React Native)</li>
+          <li>🧠 AI-assisted prototypes</li>
+          <li>⚙️ Backend & dashboards</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>Who we are</h2>
+      <p>
+        We’re a Miami-based digital studio focused on building polished,
+        lightweight products. Whether it’s a casual game, a utility app, or an
+        internal tool — we care about UX, speed, and clean code.
+      </p>
+    </section>
+
+    <section id="services" class="section cards">
+      <div class="card">
+        <h3>App Prototyping</h3>
+        <p>From idea → clickable → MVP. Fast iterations, clear scope.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Development</h3>
+        <p>iOS & Android from a single codebase. Store-ready.</p>
+      </div>
+      <div class="card">
+        <h3>Web & Admin Panels</h3>
+        <p>Simple dashboards to manage users, content, and payments.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Recent things we’ve built</h2>
+      <div class="project-grid">
+        <div class="project">
+          <h4>Neon Sudoku</h4>
+          <p>Casual game with score system and fun UI.</p>
+        </div>
+        <div class="project">
+          <h4>Tour Operator Dashboard</h4>
+          <p>Internal web app for quotes and reservations.</p>
+        </div>
+        <div class="project">
+          <h4>AI Helper Widget</h4>
+          <p>Small AI-based assistant embedded in a website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let’s build something</h2>
+      <p>Tell us about your app idea and we’ll get back to you.</p>
+      <form class="contact-form" onsubmit="return sendFake(event)">
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <textarea placeholder="What do you want to build?" required></textarea>
+        <button type="submit" class="primary-btn">Send</button>
+      </form>
+      <p class="small">
+        Or email us directly:
+        <a href="mailto:admin@edgyloops.com">admin@edgyloops.com</a>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Edgy Loops. All rights reserved.</p>
+      <p>
+        <a href="privacy.html">Privacy Policy</a> •
+        <a href="mailto:admin@edgyloops.com">admin@edgyloops.com</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
